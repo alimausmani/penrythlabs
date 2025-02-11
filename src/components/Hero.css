@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
     background: linear-gradient(to right, rgba(0, 0, 139, 0.6), rgba(0, 255, 255, 0.6)), 
                 url("/hero-bg.jpg") no-repeat center center/cover;
     height: 80vh;
@@ -9,7 +9,24 @@
     text-align: center;
     position: relative;
     padding: 20px;
+} */
+
+
+.hero {
+    background: linear-gradient(to right, rgba(0, 0, 139, 0.6), rgba(0, 255, 255, 0.6)), 
+                url("https://media.istockphoto.com/id/1221032250/photo/asian-scientist-or-doctors-use-microscopes-to-test-for-the-coronavirus-or-a-new-flu-virus-to.jpg?s=612x612&w=0&k=20&c=nqmrPXZDDKH1o2WyNlmJK7oyd8zvZqgHnWkXg2HS96k=") 
+                no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 20px;
 }
+
+
 
 .overlay {
     background: rgba(0, 0, 0, 0.5); /* Darker overlay for better contrast */
@@ -17,8 +34,3 @@
     border-radius: 10px;
 }
 
-.badges img {
-    width: 50px;  /* Adjusted for better alignment */
-    margin: 10px;
-    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.3)); /* Slight shadow for better visibility */
-}

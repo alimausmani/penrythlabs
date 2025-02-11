@@ -12,11 +12,6 @@ const Hero = () => {
           quality pharmaceutical medicines. We bring high-quality products to
           people around the world.
         </p>
-        <div className="badges">
-          <img src="/glp.png" alt="GLP Certified" />
-          <img src="/iso.png" alt="ISO Certified" />
-          <img src="/who.png" alt="WHO Certified" />
-        </div>
         <button className="btn">Read More</button>
       </div>
     </section>

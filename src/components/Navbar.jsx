@@ -39,7 +39,7 @@ const Navbar = () => {
                     {searchOpen && (
                         <div className="modal">
                             <div className="modal-content">
-                                <span className="close-btn" onClick={() => setSearchOpen(false)}>✖</span>
+                                <span className="close-btn" onClick={() => setSearchOpen(false)}>☰</span>
                                 <input type="text" placeholder="Type to search" className="search-input" />
                                 <div>
                                 <hr className="navbar-divider" />

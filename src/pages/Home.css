@@ -1,0 +1,194 @@
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;   
+    color: white;
+    padding: 0 20%;
+    overflow: hidden;
+    /* Proper Background Image */
+    background: linear-gradient(to right, rgba(193, 43, 193, 0.702) 10%, hsl(316, 62%, 75%) 50%, #e3b2dd99 90% ,hsla(307, 28%, 77%, 0.6) 30%), 
+                url("https://t3.ftcdn.net/jpg/02/59/28/82/360_F_259288299_zxWkQyTjLF5yX29Ve54djWk5rGH0UQLK.jpg") 
+                no-repeat center center/cover; 
+                
+
+}
+
+.overlay {
+    margin-bottom: 20%;
+    padding-bottom: 20px;
+}
+
+/* Fade-in Animation for Text */
+/* .hero h3,
+.hero h1,
+.hero p,
+.button {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+} */
+
+
+/* Default state */
+.hero h3, .hero h1, .hero p, .button {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Add animation when .animate class is added */
+.animate h3,
+.animate h1,
+.animate p,
+.animate .button {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
+.hero h3 {
+    font-size: 25px;
+    font-weight: bold;
+    animation-delay: 0.3s;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-size: 46px;
+    font-weight: 700;
+    margin-top: 10px;
+    animation-delay: 0.6s;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 15px;
+    max-width: 600px;
+    /* Keep text wrapped */
+    line-height: 1.5;
+    animation-delay: 0.9s;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: white;
+    color: black;
+    border: 2px solid white;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.about {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .about h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .about h2 .highlight {
+    color: #0665ad;
+  }
+  
+  .about p {
+    font-size: 17px;
+    display: inline-block; /* Makes it behave like inline text */
+    max-width: 100%; /* Adjust to the full width */
+    text-align: center;
+    white-space: normal; /* Allows wrapping if needed */
+    margin-bottom: 44px;
+  }
+  
+  
+  .boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .box1 {
+    width: 320px;
+    height: auto;
+    background-color: #e2ecff;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* border-radius: 10px; */
+  }
+  
+
+  
+  .box1 img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .box1 h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .box1 p {
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 250px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .boxes {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box1 {
+      width: 90%;
+    }
+  }
+  
