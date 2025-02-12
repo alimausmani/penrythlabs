@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/Logo.jpeg";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -12,16 +13,18 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-top">
                 <div className="navbar-top-left">
-                    <span>📞 Call us: +917496980581</span>
-                    <span>📧 Email: Penrythlabs@gmail.com</span>
+                    <span>📞 <strong className="bold-text">Call us:</strong> +917496980581</span>
+                    <span>📧 <strong className="bold-text">Email us:</strong> sizwinpharma@gmail.com</span>
                 </div>
-                <button className="btn">Products List</button>
+                <a href="/ProductsPriceList.pdf" target="_blank" rel="noopener noreferrer">
+                    <button className="btn">Products List</button>
+                </a>
             </div>
             <hr className="navbar-divider" />
 
             <div className="navbar-main">
                 <img
-                    src="https://penrythlabs.com/wp-content/uploads/2017/12/Logo.png" alt="Penryth Labs Logo"className="logo"/>
+                    src={Logo} alt="Sizwin Pharma Logo" className="logo" />
                 <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                     <li><Link to="/">HOME</Link></li>
                     <li><Link to="/about">ABOUT US</Link></li>
@@ -35,19 +38,19 @@ const Navbar = () => {
                     <li><Link to="/gallery">GALLERY</Link></li>
                     <li><Link to="/contact">CONTACT</Link></li>
                 </ul>
-                    <span className="search-icon" onClick={() => setSearchOpen(true)}>🔍</span>
-                    {searchOpen && (
-                        <div className="modal">
-                            <div className="modal-content">
-                                <span className="close-btn" onClick={() => setSearchOpen(false)}>☰</span>
-                                <input type="text" placeholder="Type to search" className="search-input" />
-                                <div>
+                <span className="search-icon" onClick={() => setSearchOpen(true)}>🔍</span>
+                {searchOpen && (
+                    <div className="modal">
+                        <div className="modal-content">
+                            <span className="close-btn" onClick={() => setSearchOpen(false)}>☰</span>
+                            <input type="text" placeholder="Type to search" className="search-input" />
+                            <div>
                                 <hr className="navbar-divider" />
                                 <p>Begin typing your search above and press return to search.</p>
-                                </div>
                             </div>
                         </div>
-                    )}
+                    </div>
+                )}
 
                 <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>☰</div>
             </div>

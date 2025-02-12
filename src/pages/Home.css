@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    height: 80vh;
+    height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,9 +13,11 @@
         url("https://t3.ftcdn.net/jpg/02/59/28/82/360_F_259288299_zxWkQyTjLF5yX29Ve54djWk5rGH0UQLK.jpg") no-repeat center center/cover;
 }
 
+
+
 .overlay {
-    margin-bottom: 20%;
-    padding-bottom: 20px;
+    margin-bottom: 15%; 
+    padding-top: 160px; 
 }
 
 .hero h3,
@@ -88,6 +90,68 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 0 10%;
+        height: 70vh;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero h3 {
+        font-size: 20px;
+        width: 60%;
+    }
+    .hero p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 0 8%;
+        height: 65vh;
+        align-items: center;
+        text-align: center;
+    }
+    .hero h3 {
+        font-size: 18px;
+        width: 80%;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 0 5%;
+        height: 60vh;
+    }
+    .hero h3 {
+        font-size: 16px;
+        width: 90%;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 6px 12px;
     }
 }
 
@@ -333,4 +397,38 @@
     font-size: 16px;
     font-weight: bold;
     background-color: rgb(6 101 173 / 47%);
+}
+
+
+@media (max-width: 1024px) {
+    .grid-container {
+        max-width: 80%;
+    }
+    .product-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .product-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .product-image {
+        height: 200px;
+    }
 }

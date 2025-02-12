@@ -30,7 +30,7 @@ const Home = () => {
     <>
       <section className="hero">
         <div className={`overlay ${animate ? "animate" : ""}`}>
-          <h3>Penryth Labs Pvt. Ltd.</h3>
+          <h3>Sizwin Pharma Pvt. Ltd.</h3>
           <h1>We Develop High Quality <br /> Affordable Medicines</h1>
           <p>
             We are an ISO-certified company engaged in supplying and distributing
