@@ -1,8 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
-import Footer from "./components/Footer";  // ✅ Keep only this one import
+import Footer from "./components/Footer"; 
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -15,8 +14,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      {/* <Hero /> */}
-      <Routes>  {/* ✅ Footer should be outside Routes */}
+      <Routes> 
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
@@ -24,7 +22,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />  {/* ✅ Footer placed outside Routes */}
+      <Footer /> 
     </Router>
   );
 };
